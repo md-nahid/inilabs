@@ -1,0 +1,55 @@
+@import 'variables';
+
+footer {
+  margin-top: 100px;
+  border-top: 2px solid #e8e8e8;
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
+  .container {
+    padding: 80px 15px;
+    .my_grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      > div {
+        > h4 {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 1.4;
+          color: #1a191e;
+        }
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+          margin: 12px 0;
+          a {
+            display: block;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            color: rgba(26, 25, 30, 0.5);
+          }
+        }
+      }
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      color: rgba(26, 25, 30, 0.5);
+      margin-right: 14px;
+    }
+  }
+  .footer_bottom {
+    padding-top: 20px;
+    border-top: 2px solid rgba(26, 25, 30, 0.5);
+  }
+}

@@ -1,0 +1,28 @@
+@import 'variables';
+
+.send_and_recive_money {
+  background-color: $greyGreen;
+  padding-top: 100px;
+  @media (max-width: 768px) {
+    padding-top: 50px;
+    margin-top: 50px;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: 64px;
+    color: $textDefault;
+    line-height: 1.1;
+    @media (max-width: 992px) {
+      font-size: 38px;
+    }
+  }
+  .row {
+    > .col-md-6 {
+      > img {
+        max-width: 400px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

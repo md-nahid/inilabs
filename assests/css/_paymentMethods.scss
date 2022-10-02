@@ -1,0 +1,13 @@
+@import 'variables';
+
+.payments_methods {
+  padding-top: 100px;
+  @media (max-width: 768px) {
+    padding-top: 50px;
+  }
+  img {
+    margin-top: 16px;
+    margin-right: 16px;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,36 @@
+@import 'variables';
+
+// ======================
+// reuseable class
+// ======================
+
+.primary_button {
+  border: none;
+  outline: none;
+  background: $lightGreen;
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 16px 24px;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: $greyGreen;
+    color: $lightGreen;
+  }
+}
+.secondary_button {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: $lightGreen;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 16px 24px;
+  transition: all 1s ease;
+  display: flex;
+  align-items: center;
+  img {
+    margin-left: 8px;
+  }
+}

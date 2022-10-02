@@ -1,0 +1,102 @@
+@import 'variables';
+
+.organize_your_money {
+  padding-top: 100px;
+  @media (max-width: 768px) {
+    padding-top: 50px;
+  }
+  .my_title_area {
+    p {
+      font-weight: 500;
+      font-size: 20px;
+      color: $textDefault;
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 64px;
+      color: $textDefault;
+      line-height: 1.1;
+      @media (max-width: 992px) {
+        font-size: 38px;
+      }
+    }
+  }
+  .my_grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 576px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .card {
+    .card-img-top {
+      height: 214px;
+      background-color: red;
+      border-radius: 16px;
+      @media (max-width: 400px) {
+        height: 150px;
+      }
+      img {
+        width: 64px;
+        height: 64px;
+      }
+    }
+    .card-body {
+      padding-left: 0;
+      h4 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        color: $textDefault;
+      }
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        color: #1a191e80;
+      }
+    }
+  }
+  .column_1 {
+    .card {
+      .card-img-top {
+        background-color: $greyGreen;
+      }
+    }
+  }
+  .column_2 {
+    .card {
+      .card-img-top {
+        background-color: $greyOrange;
+      }
+    }
+  }
+  .column_3 {
+    .card {
+      .card-img-top {
+        background-color: $greyBlue;
+      }
+    }
+  }
+  .column_4 {
+    .card {
+      .card-img-top {
+        background-color: #dfebf1;
+      }
+    }
+  }
+  .column_5 {
+    .card {
+      .card-img-top {
+        background-color: #f8f8f8;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}

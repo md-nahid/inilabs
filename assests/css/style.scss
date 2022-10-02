@@ -1,0 +1,24 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'DM Sans', sans-serif;
+}
+:root {
+  scroll-behavior: smooth;
+}
+
+@import 'reuseable';
+@import 'navigation';
+@import 'banner';
+@import 'oneAppOneBanking';
+@import 'sendAndReciveMoney';
+@import 'organizeYourMoney';
+@import 'stayNotified';
+@import 'paymentMethods';
+@import 'seemlessIntegration';
+@import 'footer';
